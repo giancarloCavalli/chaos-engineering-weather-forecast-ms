@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast", "WeatherForecast.csproj", "{F876F520-7702-4456-B953-6B2515188C9C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{988BDCF1-7561-4B75-BEAF-CC1EB605D799}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{84BA49D6-3C4A-4D1F-95AF-1710E4A529F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,8 @@ Global
 		{F876F520-7702-4456-B953-6B2515188C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F876F520-7702-4456-B953-6B2515188C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F876F520-7702-4456-B953-6B2515188C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F876F520-7702-4456-B953-6B2515188C9C} = {988BDCF1-7561-4B75-BEAF-CC1EB605D799}
 	EndGlobalSection
 EndGlobal
