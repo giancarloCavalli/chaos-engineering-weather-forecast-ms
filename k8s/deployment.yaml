@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weather-forecast-api-deployment
+  namespace: development
+  labels:
+    app: weather-forecast-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: weather-forecast-api
+  template:
+    metadata:
+      labels:
+        app: weather-forecast-api
+    spec:
+      containers:
+        - name: weather-forecast-api
+          image: gcavalli97/chaos-engineering-weather-forecast-ms
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 250m
+              memory: 256Mi
